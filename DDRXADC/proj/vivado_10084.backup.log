@@ -1,0 +1,354 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar 23 16:28:11 2018
+# Process ID: 10084
+# Current directory: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18580 D:\AlienWare\Course\ECE532\MileStone7\Talking\DDRXADC\DDRXADC\proj\XADC.xpr
+# Log file: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/vivado.log
+# Journal file: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.xpr
+INFO: [Project 1-313] Project file moved from 'D:/AlienWare/Course/ECE532/MileStone7/Testing/Nexys4DDRXADC/Nexys-4-DDR-XADC/proj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 843.313 ; gain = 119.543
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: XADCdemo
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1586.625 ; gain = 112.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'XADCdemo' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:22]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/.Xil/Vivado-10084-DESKTOP-6HDQGGD/realtime/xadc_wiz_0_stub.vhdl:34]
+WARNING: [Synth 8-350] instance 'XLXI_7' of module 'xadc_wiz_0' requires 23 connections, but only 22 given [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:58]
+INFO: [Synth 8-638] synthesizing module 'DigitToSeg' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/DigitToSeg.v:23]
+INFO: [Synth 8-638] synthesizing module 'sevensegdecoder' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/sevensegdecoder.v:21]
+INFO: [Synth 8-226] default block is never used [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/sevensegdecoder.v:28]
+INFO: [Synth 8-256] done synthesizing module 'sevensegdecoder' (1#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/sevensegdecoder.v:21]
+INFO: [Synth 8-638] synthesizing module 'mux4_4bus' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/mux4_4bus.v:21]
+INFO: [Synth 8-256] done synthesizing module 'mux4_4bus' (2#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/mux4_4bus.v:21]
+INFO: [Synth 8-638] synthesizing module 'segClkDevider' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/segClkDevider.v:21]
+	Parameter constantNumber bound to: 10000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'segClkDevider' (3#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/segClkDevider.v:21]
+INFO: [Synth 8-638] synthesizing module 'counter3bit' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/counter3bit.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counter3bit' (4#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/counter3bit.v:1]
+INFO: [Synth 8-638] synthesizing module 'decoder_3_8' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/decoder3_8.v:21]
+INFO: [Synth 8-256] done synthesizing module 'decoder_3_8' (5#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/decoder3_8.v:21]
+INFO: [Synth 8-256] done synthesizing module 'DigitToSeg' (6#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/DigitToSeg.v:23]
+WARNING: [Synth 8-6014] Unused sequential element decimal_reg was removed.  [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:118]
+INFO: [Synth 8-256] done synthesizing module 'XADCdemo' (7#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:22]
+WARNING: [Synth 8-3331] design counter3bit has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1623.590 ; gain = 149.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin XLXI_47:rst to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/DigitToSeg.v:67]
+WARNING: [Synth 8-3295] tying undriven pin segment1:in8[3] to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:178]
+WARNING: [Synth 8-3295] tying undriven pin segment1:in8[2] to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:178]
+WARNING: [Synth 8-3295] tying undriven pin segment1:in8[1] to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:178]
+WARNING: [Synth 8-3295] tying undriven pin segment1:in8[0] to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:178]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1623.590 ; gain = 149.063
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'XLXI_7'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 11 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'XLXI_7/U0'
+Finished Parsing XDC File [d:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'XLXI_7/U0'
+Parsing XDC File [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/constraints/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/constraints/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1994.809 ; gain = 520.281
+26 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1994.809 ; gain = 522.316
+place_ports {data[0]} C17
+place_ports {data[1]} D18
+place_ports {data[2]} E18
+place_ports {data[3]} G17
+place_ports {data[4]} D17
+place_ports {data[5]} E17
+set_property package_pin "" [get_ports [list  {data[6]}]]
+place_ports {data[6]} F18
+place_ports {data[7]} G18
+place_ports {data[8]} D14
+place_ports {data[9]} F16
+place_ports {data[10]} G16
+place_ports {data[11]} H14
+place_ports {data[12]} E16
+place_ports {data[13]} F13
+place_ports {data[14]} G13
+place_ports {data[15]} H16
+set_property IOSTANDARD LVCMOS33 [get_ports [list {data[15]} {data[14]} {data[13]} {data[12]} {data[11]} {data[10]} {data[9]} {data[8]} {data[7]} {data[6]} {data[5]} {data[4]} {data[3]} {data[2]} {data[1]} {data[0]}]]
+set_property target_constrs_file D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/constraints/Nexys4DDR_Master.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 23 16:50:05 2018] Launched synth_1...
+Run output will be captured here: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/synth_1/runme.log
+[Fri Mar 23 16:50:05 2018] Launched impl_1...
+Run output will be captured here: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2018.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'XADCdemo' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:22]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/.Xil/Vivado-10084-DESKTOP-6HDQGGD/realtime/xadc_wiz_0_stub.vhdl:34]
+WARNING: [Synth 8-350] instance 'XLXI_7' of module 'xadc_wiz_0' requires 23 connections, but only 22 given [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:59]
+INFO: [Synth 8-638] synthesizing module 'DigitToSeg' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/DigitToSeg.v:23]
+INFO: [Synth 8-638] synthesizing module 'sevensegdecoder' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/sevensegdecoder.v:21]
+INFO: [Synth 8-226] default block is never used [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/sevensegdecoder.v:28]
+INFO: [Synth 8-256] done synthesizing module 'sevensegdecoder' (1#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/sevensegdecoder.v:21]
+INFO: [Synth 8-638] synthesizing module 'mux4_4bus' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/mux4_4bus.v:21]
+INFO: [Synth 8-256] done synthesizing module 'mux4_4bus' (2#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/mux4_4bus.v:21]
+INFO: [Synth 8-638] synthesizing module 'segClkDevider' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/segClkDevider.v:21]
+	Parameter constantNumber bound to: 10000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'segClkDevider' (3#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/segClkDevider.v:21]
+INFO: [Synth 8-638] synthesizing module 'counter3bit' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/counter3bit.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counter3bit' (4#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/counter3bit.v:1]
+INFO: [Synth 8-638] synthesizing module 'decoder_3_8' [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/decoder3_8.v:21]
+INFO: [Synth 8-256] done synthesizing module 'decoder_3_8' (5#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/decoder3_8.v:21]
+INFO: [Synth 8-256] done synthesizing module 'DigitToSeg' (6#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/DigitToSeg.v:23]
+WARNING: [Synth 8-6014] Unused sequential element decimal_reg was removed.  [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:119]
+INFO: [Synth 8-256] done synthesizing module 'XADCdemo' (7#1) [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:22]
+WARNING: [Synth 8-3331] design counter3bit has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2050.824 ; gain = 32.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin XLXI_47:rst to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/DigitToSeg.v:67]
+WARNING: [Synth 8-3295] tying undriven pin segment1:in8[3] to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:179]
+WARNING: [Synth 8-3295] tying undriven pin segment1:in8[2] to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:179]
+WARNING: [Synth 8-3295] tying undriven pin segment1:in8[1] to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:179]
+WARNING: [Synth 8-3295] tying undriven pin segment1:in8[0] to constant 0 [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/hdl/XADCdemo.v:179]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2050.824 ; gain = 32.715
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'XLXI_7'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 11 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 17 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'XLXI_7/U0'
+Finished Parsing XDC File [d:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'XLXI_7/U0'
+Parsing XDC File [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/constraints/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/constraints/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 2069.809 ; gain = 51.699
+set_property IOSTANDARD LVCMOS33 [get_ports [list ready]]
+place_ports ready H4
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 23 16:57:40 2018] Launched synth_1...
+Run output will be captured here: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/synth_1/runme.log
+[Fri Mar 23 16:57:40 2018] Launched impl_1...
+Run output will be captured here: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A5ACB
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A5A5ACB
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A5ACB
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A5A5ACB
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A4C4CCA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A5ACB
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 23 17:35:44 2018...

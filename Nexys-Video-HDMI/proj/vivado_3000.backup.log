@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr  9 12:21:06 2018
+# Process ID: 3000
+# Current directory: D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14740 D:\AlienWare\Course\ECE532\MileStone8\MileStone7\Nexys-Video-HDMI\proj\HDMI.xpr
+# Log file: D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/vivado.log
+# Journal file: D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/HDMI.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/AlienWare/Course/ECE532/MileStone8/MileStone7/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 973.383 ; gain = 250.082
+open_bd_design {D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/src/bd/hdmi/hdmi.bd}
+Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding cell -- digilentinc.com:ip:dvi2rgb:1.7 - dvi2rgb_0
+Adding cell -- digilentinc.com:ip:rgb2dvi:1.3 - rgb2dvi_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_video
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:mig_7series:4.0 - mig_7series_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_pxl
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_1
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:user:UDP:2 - UDP_0
+Adding cell -- xilinx.com:user:clk:5 - clk_0
+Adding cell -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_0
+Adding cell -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_1
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:user:control:1 - control_0
+Adding cell -- xilinx.com:ip:dist_mem_gen:8.0 - dist_mem_gen_0
+Adding cell -- xilinx.com:ip:axi_vip:1.1 - axi_vip_0
+Adding cell -- xilinx.com:user:ADC_fpga_d:1 - ADC_fpga_d_0
+Adding cell -- xilinx.com:user:ampDec:1 - ampDec_0
+Adding cell -- xilinx.com:user:PhaseDetector:1.0 - PhaseDetector_0
+Adding cell -- xilinx.com:user:FilterIIR:1.0 - FilterIIR_0
+Adding cell -- xilinx.com:user:DAC:1 - DAC_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /mig_7series_0/mmcm_locked(undef) and /dvi2rgb_0/aRst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out2(clk) and /clk_0/clk_in_500MHz(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0/clear_small_counter(undef) and /c_counter_binary_0/SCLR(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0/clear_large_counter(undef) and /c_counter_binary_1/SCLR(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out3(clk) and /clk_0/clk_in_10MHz(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out3(clk) and /DAC_0/clk1(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out5(clk) and /UDP_0/clk_10MHz(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /UDP_0/clk100MHz(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ADC_fpga_d_0/CLK100MHZ(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /ampDec_0/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /DAC_0/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out4(clk) and /UDP_0/clk_125MHz(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out4(clk) and /dist_mem_gen_0/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out6(clk) and /FilterIIR_0/clk(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - auto_rs_w
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - auto_rs_w
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - auto_rs_w
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Successfully read diagram <hdmi> from BD file <D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/src/bd/hdmi/hdmi.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1063.531 ; gain = 81.398
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/HDMI.sdk -hwspec D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/HDMI.sdk/hdmi_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/HDMI.sdk -hwspec D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/HDMI.sdk/hdmi_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/src/bd/hdmi/ui/bd_8da6e6f8.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  9 12:34:45 2018...

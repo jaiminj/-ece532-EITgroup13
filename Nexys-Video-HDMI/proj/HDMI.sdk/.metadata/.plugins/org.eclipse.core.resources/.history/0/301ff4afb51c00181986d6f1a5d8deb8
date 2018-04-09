@@ -1,0 +1,33 @@
+/*
+ * array.c
+ *
+ *  Created on: Feb 28, 2018
+ *      Author: xujia
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+
+main()
+{
+int a[1000000];
+ u32 i,j;
+ long long int k=0;
+  FILE *f;
+   int buffer;
+   f=fopen("b.txt","r");
+    if(f==NULL) printf("File cannot be opened");
+     while(fscanf(f,"%d",&buffer)!=EOF)
+        {
+            a[i]=buffer;
+     i++;
+     }
+     for(i=0;i<999999;i++)
+            {    for(j=i+1;j<1000000;j++)
+              {    if(a[i]>a[j])
+                k++;
+     }
+         }
+           printf("\nNumber of inversions are %d\n",k);
+            }
+

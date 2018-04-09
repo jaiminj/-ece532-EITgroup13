@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/constraints/Nexys4DDR_Master.xdc rfile:../../src/constraints/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:300 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports ready]
+set_property src_info {type:XDC file:1 line:301 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN H4 [get_ports ready]

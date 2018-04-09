@@ -1,0 +1,491 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 10584
+License: Customer
+
+Current time: 	Fri Mar 09 11:28:44 EST 2018
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1368x912
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 10 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	xujia
+User home directory: C:/Users/xujia
+User working directory: C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/xujia/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/xujia/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/xujia/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/vivado.log
+Vivado journal file location: 	C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/vivado.jou
+Engine tmp dir: 	C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/.Xil/Vivado-10584-DESKTOP-7TO7KK1
+
+GUI allocated memory:	178 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 518 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 50 MB (+50140kb) [00:00:11]
+// [Engine Memory]: 491 MB (+363227kb) [00:00:11]
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\xujia\Desktop\Nexys-Video-HDMI-2016.4-2\Nexys-Video-HDMI\proj\HDMI.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.xpr 
+// [GUI Memory]: 62 MB (+9952kb) [00:00:13]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 567 MB. GUI used memory: 35 MB. Current time: 3/9/18 11:28:46 AM EST
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 570 MB (+57268kb) [00:00:18]
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 33 MB. Current time: 3/9/18 11:29:01 AM EST
+// [Engine Memory]: 631 MB (+34291kb) [00:00:33]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 71 MB (+6108kb) [00:00:41]
+// [Engine Memory]: 713 MB (+52622kb) [00:00:41]
+// [GUI Memory]: 78 MB (+3195kb) [00:00:42]
+// [Engine Memory]: 757 MB (+8296kb) [00:00:43]
+// [GUI Memory]: 83 MB (+1049kb) [00:00:44]
+// [GUI Memory]: 87 MB (+24kb) [00:00:44]
+// Tcl Message: open_project C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 776 MB. GUI used memory: 57 MB. Current time: 3/9/18 11:29:16 AM EST
+// Tcl Message: open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 937.441 ; gain = 240.305 
+// Project name: HDMI; location: C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj; part: xc7a200tsbg484-1
+// [Engine Memory]: 799 MB (+5200kb) [00:00:47]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/src/bd/hdmi/hdmi.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0 Adding cell -- digilentinc.com:ip:dvi2rgb:1.7 - dvi2rgb_0 Adding cell -- digilentinc.com:ip:rgb2dvi:1.3 - rgb2dvi_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_video 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 860 MB (+21543kb) [00:01:03]
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 871 MB. GUI used memory: 64 MB. Current time: 3/9/18 11:29:36 AM EST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1011.371 ; gain = 55.188 
+// 'bA' command handler elapsed time: 15 seconds
+// Elapsed time: 16 seconds
+dismissDialog("Open Block Design"); // bs (cj)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_IP_LOCATION, "Open Recent IP Location"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cj): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+// 'o' command handler elapsed time: 9 seconds
+selectButton("PAResourceItoN.NewLaunchHardwareDialog_EXPORTED_HARDWARE_SYSTEM_OUT_OF_DATE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Launch SDK"); // aa (cj)
+// Tcl Message: launch_sdk -workspace C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.sdk -hwspec C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.sdk/hdmi_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.sdk -hwspec C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.sdk/hdmi_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 92 MB (+950kb) [00:02:23]
+// [GUI Memory]: 97 MB (+240kb) [00:02:43]
+// Elapsed time: 162 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bs (cj):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bs (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cZ, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bs (cj):  Auto Connect : addNotify
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2017.4   **** Build date : Dec 15 2017-21:08:27     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   
+dismissDialog("Auto Connect"); // bs (cj)
+// [GUI Memory]: 102 MB (+519kb) [00:04:22]
+// Elapsed time: 31 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cZ, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Elapsed time: 12 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cZ, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,264 MB. GUI used memory: 67 MB. Current time: 3/9/18 11:34:00 AM EST
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HTimer (StateMonitor Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,264 MB (+378649kb) [00:05:30]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 29 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// PAPropertyPanels.initPanels (xc7a200t_0) elapsed time: 0.4s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.runs/impl_1/hdmi_wrapper.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1625.285 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 10 seconds
+dismissDialog("Program Device"); // bs (cj)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276724048B 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// [GUI Memory]: 108 MB (+209kb) [00:31:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 69 MB. Current time: 3/9/18 12:04:02 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 67 MB. Current time: 3/9/18 12:34:02 PM EST
+// [GUI Memory]: 114 MB (+1069kb) [01:22:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 67 MB. Current time: 3/9/18 1:04:02 PM EST
+// [GUI Memory]: 120 MB (+55kb) [02:05:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/9/18 1:34:02 PM EST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 7280 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cj)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.runs/impl_1/hdmi_wrapper.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1634.773 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/9/18 2:04:03 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 67 MB. Current time: 3/9/18 2:34:03 PM EST
+// Elapsed time: 3540 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/src/bd/hdmi/hdmi.bd} 
+dismissDialog("Open Block Design"); // bs (cj)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/9/18 3:04:04 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/9/18 3:34:04 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/9/18 4:04:04 PM EST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276724048B 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/9/18 5:06:10 PM EST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// Elapsed time: 9101 seconds
+dismissDialog("Close Hardware Target"); // n (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/9/18 5:36:12 PM EST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 67 MB. Current time: 3/9/18 6:06:14 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 67 MB. Current time: 3/9/18 8:08:56 PM EST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/10/18 1:31:54 PM EST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/10/18 2:33:50 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/10/18 3:03:51 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 60 MB. Current time: 3/10/18 3:33:51 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 60 MB. Current time: 3/10/18 4:03:51 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 60 MB. Current time: 3/10/18 4:33:52 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/10/18 5:03:52 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 60 MB. Current time: 3/10/18 5:33:52 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 60 MB. Current time: 3/10/18 6:03:53 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/10/18 6:33:54 PM EST
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/10/18 7:05:09 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/10/18 7:35:09 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/10/18 8:05:09 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/10/18 8:35:10 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 60 MB. Current time: 3/10/18 9:05:11 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/10/18 10:52:51 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/10/18 11:22:53 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 60 MB. Current time: 3/10/18 11:52:53 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/11/18 1:55:23 AM EST
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/11/18 4:30:23 PM EDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/11/18 5:00:23 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/11/18 5:54:21 PM EDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// [GUI Memory]: 128 MB (+2586kb) [53:53:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/11/18 6:24:16 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/11/18 6:54:17 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/11/18 8:08:29 PM EDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// [GUI Memory]: 136 MB (+1634kb) [55:50:46]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/11/18 8:38:26 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/11/18 9:08:25 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/11/18 9:38:25 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/11/18 10:08:26 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/11/18 10:38:27 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/11/18 11:08:26 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/11/18 11:38:27 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/12/18 12:08:27 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/12/18 10:49:36 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/12/18 11:43:49 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/12/18 12:13:50 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/12/18 12:43:52 PM EDT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 240976 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.runs/impl_1/hdmi_wrapper.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1646.191 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bs (cj)
+// Elapsed time: 294 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cZ, cj)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bA (cj): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bA)
+// bs (cj):  Program Device : addNotify
+dismissDialog("Program Device"); // bA (cj)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/xujia/Desktop/Nexys-Video-HDMI-2016.4-2/Nexys-Video-HDMI/proj/HDMI.runs/impl_1/hdmi_wrapper.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1646.191 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 67 MB. Current time: 3/12/18 1:13:55 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 66 MB. Current time: 3/12/18 1:43:57 PM EDT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276724048B 
+// n (cj): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 2:16:40 PM EDT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 4:02:25 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 5:38:34 PM EDT
+// Elapsed time: 16251 seconds
+dismissDialog("Close Hardware Target"); // n (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 6:08:35 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 6:38:35 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 7:09:40 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/12/18 7:39:41 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 8:09:45 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/12/18 8:39:50 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 9:09:49 PM EDT
+// Elapsed time: 12741 seconds
+selectView(PAResourceOtoP.PAViews_FLOW_NAVIGATOR, "Flow Navigator", 75, 75, 243, 759, false, false, false, true, false); // D (cf, cj) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 9:39:55 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 61 MB. Current time: 3/12/18 10:09:55 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 10:39:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/12/18 11:11:44 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/13/18 2:30:34 AM EDT
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 62 MB. Current time: 3/13/18 1:31:58 PM EDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/13/18 2:01:56 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 64 MB. Current time: 3/13/18 2:31:57 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/13/18 3:01:58 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/13/18 3:39:07 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/13/18 4:09:03 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/13/18 4:39:04 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,270 MB. GUI used memory: 65 MB. Current time: 3/13/18 5:09:05 PM EDT

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr  9 12:21:06 2018
+# Process ID: 3000
+# Current directory: D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14740 D:\AlienWare\Course\ECE532\MileStone8\MileStone7\Nexys-Video-HDMI\proj\HDMI.xpr
+# Log file: D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/vivado.log
+# Journal file: D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/HDMI.xpr
+open_bd_design {D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/src/bd/hdmi/hdmi.bd}
+update_compile_order -fileset sources_1
+launch_sdk -workspace D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/HDMI.sdk -hwspec D:/AlienWare/Course/ECE532/MileStone8/MileStone7/Nexys-Video-HDMI/proj/HDMI.sdk/hdmi_wrapper.hdf
+regenerate_bd_layout
+save_bd_design

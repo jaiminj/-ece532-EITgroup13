@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Mar 24 22:24:23 2018
+# Process ID: 17508
+# Current directory: d:/AlienWare/Course/ECE532/MileStone7/Nexys-Video-HDMI/proj
+# Command line: wbtcv.exe -mode batch -source d:/alienware/course/ece532/milestone7/nexys-video-hdmi/proj/hdmi.tmp/filteriir_v1_0_project/FilterIIR_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: d:/AlienWare/Course/ECE532/MileStone7/Nexys-Video-HDMI/proj/webtalk.log
+# Journal file: d:/AlienWare/Course/ECE532/MileStone7/Nexys-Video-HDMI/proj\webtalk.jou
+#-----------------------------------------------------------
+source d:/alienware/course/ece532/milestone7/nexys-video-hdmi/proj/hdmi.tmp/filteriir_v1_0_project/FilterIIR_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace

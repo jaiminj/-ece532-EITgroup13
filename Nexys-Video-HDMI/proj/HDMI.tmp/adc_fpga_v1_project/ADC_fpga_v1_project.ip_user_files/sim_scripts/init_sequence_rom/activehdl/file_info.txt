@@ -1,0 +1,3 @@
+blk_mem_gen_v8_4.v,verilog,blk_mem_gen_v8_4_1,../../../ipstatic/simulation/blk_mem_gen_v8_4.v,
+init_sequence_rom.v,verilog,xil_defaultlib,../../../../../../../../IPs/ADC/src/init_sequence_rom/sim/init_sequence_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

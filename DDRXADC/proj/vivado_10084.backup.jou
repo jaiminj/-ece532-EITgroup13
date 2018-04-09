@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar 23 16:28:11 2018
+# Process ID: 10084
+# Current directory: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18580 D:\AlienWare\Course\ECE532\MileStone7\Talking\DDRXADC\DDRXADC\proj\XADC.xpr
+# Log file: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/vivado.log
+# Journal file: D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+synth_design -rtl -name rtl_1
+place_ports {data[0]} C17
+place_ports {data[1]} D18
+place_ports {data[2]} E18
+place_ports {data[3]} G17
+place_ports {data[4]} D17
+place_ports {data[5]} E17
+set_property package_pin "" [get_ports [list  {data[6]}]]
+place_ports {data[6]} F18
+place_ports {data[7]} G18
+place_ports {data[8]} D14
+place_ports {data[9]} F16
+place_ports {data[10]} G16
+place_ports {data[11]} H14
+place_ports {data[12]} E16
+place_ports {data[13]} F13
+place_ports {data[14]} G13
+place_ports {data[15]} H16
+set_property IOSTANDARD LVCMOS33 [get_ports [list {data[15]} {data[14]} {data[13]} {data[12]} {data[11]} {data[10]} {data[9]} {data[8]} {data[7]} {data[6]} {data[5]} {data[4]} {data[3]} {data[2]} {data[1]} {data[0]}]]
+set_property target_constrs_file D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/src/constraints/Nexys4DDR_Master.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list ready]]
+place_ports ready H4
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/MileStone7/Talking/DDRXADC/DDRXADC/proj/XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
