@@ -1,0 +1,649 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Mar 17 15:23:38 2018
+# Process ID: 7248
+# Current directory: c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/edit_FilterIIR_v1_0.runs/synth_1
+# Command line: vivado.exe -log FilterIIR_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FilterIIR_v1_0.tcl
+# Log file: c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/edit_FilterIIR_v1_0.runs/synth_1/FilterIIR_v1_0.vds
+# Journal file: c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/edit_FilterIIR_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FilterIIR_v1_0.tcl -notrace
+Command: synth_design -top FilterIIR_v1_0 -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6448 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 340.867 ; gain = 101.848
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FilterIIR_v1_0' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/hdl/FilterIIR_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FilterIIR_v1_0_S00_AXI' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/hdl/FilterIIR_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'filter_iir' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/filter_iir.v:29]
+INFO: [Synth 8-638] synthesizing module 'lowpass_section_sample' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/lowpass_section_sample.v:24]
+INFO: [Synth 8-638] synthesizing module 'mult' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:24]
+INFO: [Synth 8-256] done synthesizing module 'mult' (1#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:24]
+INFO: [Synth 8-638] synthesizing module 'subtract' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/subtract.v:24]
+INFO: [Synth 8-256] done synthesizing module 'subtract' (2#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/subtract.v:24]
+INFO: [Synth 8-638] synthesizing module 'sum' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/sum.v:26]
+INFO: [Synth 8-256] done synthesizing module 'sum' (3#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/sum.v:26]
+INFO: [Synth 8-638] synthesizing module 'delay' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (4#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'lowpass_section_sample' (5#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/lowpass_section_sample.v:24]
+INFO: [Synth 8-638] synthesizing module 'last_section' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/last_section.v:27]
+INFO: [Synth 8-256] done synthesizing module 'last_section' (6#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/last_section.v:27]
+INFO: [Synth 8-256] done synthesizing module 'filter_iir' (7#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/filter_iir.v:29]
+INFO: [Synth 8-256] done synthesizing module 'FilterIIR_v1_0_S00_AXI' (8#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/hdl/FilterIIR_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'FilterIIR_v1_0' (9#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/hdl/FilterIIR_v1_0.v:4]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 392.980 ; gain = 153.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 392.980 ; gain = 153.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 392.980 ; gain = 153.961
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 10 [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 392.980 ; gain = 153.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     57 Bit       Adders := 6     
+	   2 Input     57 Bit       Adders := 15    
+	   3 Input     57 Bit       Adders := 3     
++---Registers : 
+	               57 Bit    Registers := 3     
+	               32 Bit    Registers := 16    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     57 Bit        Muxes := 12    
+	   2 Input     32 Bit        Muxes := 15    
+	  16 Input     32 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mult 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     57 Bit       Adders := 1     
+	   2 Input     57 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     57 Bit        Muxes := 2     
+Module subtract 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     57 Bit       Adders := 1     
+Module sum 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     57 Bit       Adders := 1     
+Module delay 
+Detailed RTL Component Info : 
++---Registers : 
+	               57 Bit    Registers := 1     
+Module FilterIIR_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	  16 Input     32 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+DSP Report: Generating DSP m_b/out3, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: PCIN+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: PCIN+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: PCIN+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: PCIN+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_c/out3, operation Mode is: A*B''.
+DSP Report: register B is absorbed into DSP m_c/out3.
+DSP Report: register B is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: Generating DSP m_c/out3, operation Mode is: PCIN+A''*B.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: Generating DSP m_c/out3, operation Mode is: A*B''.
+DSP Report: register B is absorbed into DSP m_c/out3.
+DSP Report: register B is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: Generating DSP m_c/out3, operation Mode is: PCIN+A''*B.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: Generating DSP m_c/out3, operation Mode is: PCIN+A''*B.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: Generating DSP m_c/out3, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: Generating DSP m_c/out3, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: Generating DSP m_c/out3, operation Mode is: PCIN+A''*B.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: register A is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: operator m_c/out3 is absorbed into DSP m_c/out3.
+DSP Report: Generating DSP m_d/out3, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: Generating DSP m_d/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: Generating DSP m_d/out3, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: Generating DSP m_d/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: Generating DSP m_d/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: Generating DSP m_d/out3, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: Generating DSP m_d/out3, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: Generating DSP m_d/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+DSP Report: operator m_d/out3 is absorbed into DSP m_d/out3.
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/FilterIIR_1.0/src/multiply.v:35]
+DSP Report: Generating DSP m_b/out3, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_b/out3, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: operator m_b/out3 is absorbed into DSP m_b/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: PCIN+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: PCIN+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: PCIN+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: Generating DSP m_a/out3, operation Mode is: PCIN+A*B.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+DSP Report: operator m_a/out3 is absorbed into DSP m_a/out3.
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design FilterIIR_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'FilterIIR_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'FilterIIR_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FilterIIR_v1_0_S00_AXI_inst/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'FilterIIR_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'FilterIIR_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FilterIIR_v1_0_S00_AXI_inst/\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[56]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[55]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[54]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[53]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[52]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[51]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[50]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[49]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[48]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[47]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[46]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[45]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[44]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[43]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[42]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[41]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[40]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[39]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[38]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[37]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[36]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[35]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[34]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[33]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[32]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[31]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[30]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[29]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (last/d_1/out_reg[28]) is unused and will be removed from module filter_iir.
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[1]) is unused and will be removed from module FilterIIR_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module FilterIIR_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module FilterIIR_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[1]) is unused and will be removed from module FilterIIR_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[0]) is unused and will be removed from module FilterIIR_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[1]) is unused and will be removed from module FilterIIR_v1_0_S00_AXI.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 612.137 ; gain = 373.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lowpass_section_sample | A*B2             | 23     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A2*B        | 23     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | A*B2             | 23     | 18     | -      | -      | 23     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A2*B        | 18     | 18     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A2*B        | 23     | 18     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | A2*B             | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | (PCIN>>17)+A2*B  | 18     | 18     | -      | -      | 40     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A2*B        | 18     | 18     | -      | -      | 40     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | A*B              | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | PCIN+A*B         | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | A*B              | 23     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | PCIN+A*B         | 18     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | PCIN+A*B         | 23     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | (PCIN>>17)+A*B   | 18     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | PCIN+A*B         | 18     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | A*B''            | 23     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A''*B       | 23     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | A*B''            | 23     | 18     | -      | -      | 23     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A''*B       | 18     | 18     | -      | -      | 23     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A''*B       | 23     | 18     | -      | -      | 23     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | A''*B            | 18     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | (PCIN>>17)+A''*B | 18     | 18     | -      | -      | 40     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A''*B       | 18     | 18     | -      | -      | 40     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | A*B2             | 23     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A2*B        | 23     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | A*B2             | 23     | 18     | -      | -      | 23     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A2*B        | 18     | 18     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A2*B        | 23     | 18     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | A2*B             | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | (PCIN>>17)+A2*B  | 18     | 18     | -      | -      | 40     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lowpass_section_sample | PCIN+A2*B        | 18     | 18     | -      | -      | 40     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|last_section           | A*B2             | 23     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|last_section           | PCIN+A2*B        | 23     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|last_section           | A*B2             | 23     | 18     | -      | -      | 23     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|last_section           | PCIN+A2*B        | 18     | 18     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|last_section           | PCIN+A2*B        | 23     | 18     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|last_section           | A2*B             | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|last_section           | (PCIN>>17)+A2*B  | 18     | 18     | -      | -      | 40     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|last_section           | PCIN+A2*B        | 18     | 18     | -      | -      | 40     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | A*B              | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | PCIN+A*B         | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | A*B              | 23     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | PCIN+A*B         | 18     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | PCIN+A*B         | 23     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | (PCIN>>17)+A*B   | 18     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult                   | PCIN+A*B         | 18     | 18     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 612.137 ; gain = 373.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 619.691 ; gain = 380.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 619.691 ; gain = 380.672
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 619.691 ; gain = 380.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 619.691 ; gain = 380.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 619.691 ; gain = 380.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 619.691 ; gain = 380.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 619.691 ; gain = 380.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |   268|
+|3     |DSP48E1 |    48|
+|4     |LUT1    |   343|
+|5     |LUT2    |   226|
+|6     |LUT3    |   384|
+|7     |LUT4    |   124|
+|8     |LUT5    |    38|
+|9     |LUT6    |   256|
+|10    |MUXF7   |    64|
+|11    |MUXF8   |    32|
+|12    |FDRE    |   815|
+|13    |FDSE    |     1|
+|14    |IBUF    |    64|
+|15    |OBUF    |    53|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------------+-----------------------+------+
+|      |Instance                      |Module                 |Cells |
++------+------------------------------+-----------------------+------+
+|1     |top                           |                       |  2718|
+|2     |  FilterIIR_v1_0_S00_AXI_inst |FilterIIR_v1_0_S00_AXI |  2451|
+|3     |    lowpass                   |filter_iir             |  1632|
+|4     |      last                    |last_section           |   519|
+|5     |        a_2                   |sum_4                  |     7|
+|6     |        d_1                   |delay_5                |    56|
+|7     |        m_a                   |mult_6                 |   252|
+|8     |        m_b                   |mult_7                 |   124|
+|9     |      section_1               |lowpass_section_sample |  1113|
+|10    |        a_2                   |subtract               |    60|
+|11    |        a_4                   |sum                    |    87|
+|12    |        d_1                   |delay                  |    57|
+|13    |        d_2                   |delay_0                |    57|
+|14    |        m_a                   |mult                   |   276|
+|15    |        m_b                   |mult_1                 |   164|
+|16    |        m_c                   |mult_2                 |   206|
+|17    |        m_d                   |mult_3                 |   206|
++------+------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 619.691 ; gain = 380.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 87 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 619.691 ; gain = 380.672
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 619.691 ; gain = 380.672
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 476 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 87 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 713.168 ; gain = 486.133
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/Filter_IIR/edit_FilterIIR_v1_0.runs/synth_1/FilterIIR_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FilterIIR_v1_0_utilization_synth.rpt -pb FilterIIR_v1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 713.168 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 17 15:24:27 2018...

@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Mar 17 00:31:42 2018
+# Process ID: 3988
+# Current directory: D:/AlienWare/Course/ECE532/s/IPs/CLK_V5/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8024 D:\AlienWare\Course\ECE532\s\IPs\CLK_V5\ip_repo\edit_clk_v5.xpr
+# Log file: D:/AlienWare/Course/ECE532/s/IPs/CLK_V5/ip_repo/vivado.log
+# Journal file: D:/AlienWare/Course/ECE532/s/IPs/CLK_V5/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/AlienWare/Course/ECE532/s/IPs/CLK_V5/ip_repo/edit_clk_v5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/AlienWare/Course/ECE532/s/IPs/CLK_V5/ip_repo/clk_5'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 840.727 ; gain = 110.848
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file D:/AlienWare/Course/ECE532/s/IPs/CLK_V5/ip_repo/clk_5/component.xml
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/AlienWare/Course/ECE532/s/IPs/CLK_V5/ip_repo/clk_5
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/AlienWare/Course/ECE532/s/IPs/CLK_V5/ip_repo/clk_5'
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 17 00:32:31 2018...

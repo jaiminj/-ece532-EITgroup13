@@ -1,0 +1,445 @@
+
+*** Running vivado
+    with args -log design_1_CLK_GEN_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_CLK_GEN_0_1.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_CLK_GEN_0_1.tcl -notrace
+Command: synth_design -top design_1_CLK_GEN_0_1 -part xc7a200tsbg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9064 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 433.309 ; gain = 100.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_CLK_GEN_0_1' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ip/design_1_CLK_GEN_0_1/synth/design_1_CLK_GEN_0_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'CLK_GEN_v1_2' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'CLK_GEN_v1_2_S00_AXI' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:251]
+INFO: [Synth 8-226] default block is never used [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:392]
+WARNING: [Synth 8-6014] Unused sequential element clock_dive_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:500]
+WARNING: [Synth 8-6014] Unused sequential element condition_1_1_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:615]
+WARNING: [Synth 8-6014] Unused sequential element condition_1_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:616]
+WARNING: [Synth 8-6014] Unused sequential element condition_2_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:618]
+WARNING: [Synth 8-6014] Unused sequential element condition_3_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:620]
+WARNING: [Synth 8-6014] Unused sequential element condition_4_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:622]
+WARNING: [Synth 8-6014] Unused sequential element condition_5_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:624]
+WARNING: [Synth 8-6014] Unused sequential element condition_6_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:626]
+WARNING: [Synth 8-6014] Unused sequential element condition_7_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:628]
+WARNING: [Synth 8-6014] Unused sequential element condition_8_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:630]
+WARNING: [Synth 8-6014] Unused sequential element condition_9_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:632]
+WARNING: [Synth 8-6014] Unused sequential element condition_10_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:634]
+WARNING: [Synth 8-6014] Unused sequential element condition_12_1_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:637]
+WARNING: [Synth 8-6014] Unused sequential element condition_12_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:638]
+WARNING: [Synth 8-6014] Unused sequential element condition_13_1_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:639]
+WARNING: [Synth 8-6014] Unused sequential element condition_13_2_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:640]
+WARNING: [Synth 8-5788] Register count_all_half_reg in module CLK_GEN_v1_2_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:549]
+WARNING: [Synth 8-3848] Net in_sample in module/entity CLK_GEN_v1_2_S00_AXI does not have driver. [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:34]
+WARNING: [Synth 8-3848] Net sample_tr in module/entity CLK_GEN_v1_2_S00_AXI does not have driver. [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:35]
+INFO: [Synth 8-256] done synthesizing module 'CLK_GEN_v1_2_S00_AXI' (1#1) [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'CLK_GEN_v1_2' (2#1) [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_CLK_GEN_0_1' (3#1) [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ip/design_1_CLK_GEN_0_1/synth/design_1_CLK_GEN_0_1.v:57]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port in_sample
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port sample_tr
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 486.297 ; gain = 153.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 486.297 ; gain = 153.109
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 862.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 862.277 ; gain = 529.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 862.277 ; gain = 529.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 862.277 ; gain = 529.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'count_upto_3_1_reg[31:0]' into 'count_upto_2_1_reg[31:0]' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:530]
+INFO: [Synth 8-4471] merging register 'count_upto_3_reg[31:0]' into 'count_upto_2_1_reg[31:0]' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:531]
+INFO: [Synth 8-4471] merging register 'count_upto_5_reg[31:0]' into 'count_upto_4_reg[31:0]' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:535]
+INFO: [Synth 8-4471] merging register 'count_upto_6_reg[31:0]' into 'count_upto_4_reg[31:0]' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:537]
+INFO: [Synth 8-4471] merging register 'count_upto_8_reg[31:0]' into 'count_upto_5_1_reg[31:0]' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:541]
+INFO: [Synth 8-4471] merging register 'count_upto_9_reg[31:0]' into 'count_upto_5_1_reg[31:0]' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:543]
+INFO: [Synth 8-4471] merging register 'count_upto_10_reg[31:0]' into 'count_upto_5_1_reg[31:0]' [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:545]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_3_1_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:530]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_3_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:531]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_5_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:535]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_6_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:537]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_8_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:541]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_9_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:543]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_10_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:545]
+WARNING: [Synth 8-6014] Unused sequential element counter_clk_div_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:501]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 862.277 ; gain = 529.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
++---Registers : 
+	               32 Bit    Registers := 32    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 31    
++---Multipliers : 
+	                 6x32  Multipliers := 4     
+	                 4x32  Multipliers := 1     
+	                 7x32  Multipliers := 2     
+	                 3x32  Multipliers := 3     
+	                 2x32  Multipliers := 1     
+	                 5x32  Multipliers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CLK_GEN_v1_2_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
++---Registers : 
+	               32 Bit    Registers := 32    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 31    
++---Multipliers : 
+	                 6x32  Multipliers := 4     
+	                 4x32  Multipliers := 1     
+	                 7x32  Multipliers := 2     
+	                 3x32  Multipliers := 3     
+	                 2x32  Multipliers := 1     
+	                 5x32  Multipliers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element counter_clk_div_reg was removed.  [d:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/be1f/hdl/CLK_GEN_v1_2_S00_AXI.v:501]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port in_sample
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port sample_tr
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design CLK_GEN_v1_2_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design design_1_CLK_GEN_0_1 has unconnected port in_sample
+WARNING: [Synth 8-3331] design design_1_CLK_GEN_0_1 has unconnected port sample_tr
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_10_1_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_9_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_9_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_8_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_9_1_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_8_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_7_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_7_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_5_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_7_reg[2]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_6_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_6_1_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_5_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_5_1_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_3_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_1_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_6_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_2_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_3_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_3_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_3_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_10_1_reg[2]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_9_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_9_1_reg[2]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/led_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_9_1_reg[3]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/led_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_6_1_reg[2]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_1_reg[2]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/led_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_3_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[2]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[3]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[4]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[5]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[6]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[7]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[8]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[9]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[10]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[11]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[12]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[13]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[14]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[15]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[16]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[17]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[18]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[19]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[20]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[21]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[22]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[23]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[24]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[25]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[26]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[27]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[28]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[29]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[30]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/CLK_GEN_v1_2_S00_AXI_inst /\count_upto_1_1_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/led_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/CLK_GEN_v1_2_S00_AXI_inst /null_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/CLK_GEN_v1_2_S00_AXI_inst /enable_reg)
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/CLK_GEN_v1_2_S00_AXI_inst /\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/CLK_GEN_v1_2_S00_AXI_inst /\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (enable_reg) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (null_reg) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (condition_3_1_reg[1]) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[1]) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[1]) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[0]) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[1]) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_1_1_reg[31]) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_10_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/led_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_all_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_all_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_10_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_9_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_9_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_8_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_6_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_5_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_5_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_4_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_10_1_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_9_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_5_1_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_4_1_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/CLK_GEN_v1_2_S00_AXI_inst /\count_all_half_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (count_all_half_reg[0]) is unused and will be removed from module CLK_GEN_v1_2_S00_AXI.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 862.277 ; gain = 529.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 865.461 ; gain = 532.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 867.570 ; gain = 534.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_4_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_7_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_2_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_7_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_7_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/led_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_7_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_4_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_6_1_reg[3]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_5_1_reg[2]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_4_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_2_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_2_1_reg[0]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/condition_8_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CLK_GEN_v1_2_S00_AXI_inst/count_upto_1_reg[1]' (FDC) to 'inst/CLK_GEN_v1_2_S00_AXI_inst/led_reg[1]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 896.875 ; gain = 563.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 896.875 ; gain = 563.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 896.875 ; gain = 563.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 896.875 ; gain = 563.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 896.875 ; gain = 563.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 896.875 ; gain = 563.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 896.875 ; gain = 563.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   314|
+|2     |LUT1   |    70|
+|3     |LUT2   |   633|
+|4     |LUT3   |   136|
+|5     |LUT4   |   762|
+|6     |LUT5   |     5|
+|7     |LUT6   |   114|
+|8     |FDCE   |   757|
+|9     |FDPE   |     5|
+|10    |FDRE   |   242|
+|11    |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     |  3039|
+|2     |  inst                        |CLK_GEN_v1_2         |  3039|
+|3     |    CLK_GEN_v1_2_S00_AXI_inst |CLK_GEN_v1_2_S00_AXI |  3034|
++------+------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 896.875 ; gain = 563.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 896.875 ; gain = 187.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 896.875 ; gain = 563.688
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 314 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_CLK_GEN_0_1' is not ideal for floorplanning, since the cellview 'CLK_GEN_v1_2_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+103 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 896.875 ; gain = 575.160
+INFO: [Common 17-1381] The checkpoint 'D:/AlienWare/Course/ECE532/Milestone4/right/MBS_V1/MicroBlazeServer.runs/design_1_CLK_GEN_0_1_synth_1/design_1_CLK_GEN_0_1.dcp' has been generated.

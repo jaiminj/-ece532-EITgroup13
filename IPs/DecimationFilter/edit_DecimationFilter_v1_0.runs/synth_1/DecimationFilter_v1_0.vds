@@ -1,0 +1,299 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Mar 17 21:53:22 2018
+# Process ID: 5984
+# Current directory: c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/edit_DecimationFilter_v1_0.runs/synth_1
+# Command line: vivado.exe -log DecimationFilter_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DecimationFilter_v1_0.tcl
+# Log file: c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/edit_DecimationFilter_v1_0.runs/synth_1/DecimationFilter_v1_0.vds
+# Journal file: c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/edit_DecimationFilter_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DecimationFilter_v1_0.tcl -notrace
+Command: synth_design -top DecimationFilter_v1_0 -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14524 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 341.457 ; gain = 102.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DecimationFilter_v1_0' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/DecimationFilter_1.0/hdl/DecimationFilter_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DecimationFilter_v1_0_S00_AXI' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/DecimationFilter_1.0/hdl/DecimationFilter_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element clk_10MHz_reg was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/DecimationFilter_1.0/hdl/DecimationFilter_v1_0_S00_AXI.v:422]
+WARNING: [Synth 8-6014] Unused sequential element counter2_reg was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/DecimationFilter_1.0/hdl/DecimationFilter_v1_0_S00_AXI.v:423]
+INFO: [Synth 8-256] done synthesizing module 'DecimationFilter_v1_0_S00_AXI' (1#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/DecimationFilter_1.0/hdl/DecimationFilter_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'DecimationFilter_v1_0' (2#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/DecimationFilter_1.0/hdl/DecimationFilter_v1_0.v:4]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 393.617 ; gain = 154.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 393.617 ; gain = 154.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 393.617 ; gain = 154.164
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/DecimationFilter_1.0/hdl/DecimationFilter_v1_0_S00_AXI.v:451]
+INFO: [Synth 8-5546] ROM "dec_out" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 393.617 ; gain = 154.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               14 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   6 Input     32 Bit        Muxes := 5     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DecimationFilter_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               14 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   6 Input     32 Bit        Muxes := 5     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "DecimationFilter_v1_0_S00_AXI_inst/dec_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design DecimationFilter_v1_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'DecimationFilter_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'DecimationFilter_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DecimationFilter_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'DecimationFilter_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'DecimationFilter_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DecimationFilter_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (DecimationFilter_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module DecimationFilter_v1_0.
+WARNING: [Synth 8-3332] Sequential element (DecimationFilter_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module DecimationFilter_v1_0.
+WARNING: [Synth 8-3332] Sequential element (DecimationFilter_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module DecimationFilter_v1_0.
+WARNING: [Synth 8-3332] Sequential element (DecimationFilter_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module DecimationFilter_v1_0.
+WARNING: [Synth 8-3332] Sequential element (DecimationFilter_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module DecimationFilter_v1_0.
+WARNING: [Synth 8-3332] Sequential element (DecimationFilter_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module DecimationFilter_v1_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     2|
+|4     |LUT2   |    14|
+|5     |LUT3   |     1|
+|6     |LUT4   |     5|
+|7     |LUT5   |    53|
+|8     |LUT6   |    61|
+|9     |FDCE   |    39|
+|10    |FDPE   |     2|
+|11    |FDRE   |   203|
+|12    |FDSE   |     1|
+|13    |IBUF   |    52|
+|14    |OBUF   |    55|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+------------------------------+------+
+|      |Instance                             |Module                        |Cells |
++------+-------------------------------------+------------------------------+------+
+|1     |top                                  |                              |   497|
+|2     |  DecimationFilter_v1_0_S00_AXI_inst |DecimationFilter_v1_0_S00_AXI |   388|
++------+-------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 588.922 ; gain = 349.469
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 588.922 ; gain = 349.469
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 588.922 ; gain = 349.469
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 693.859 ; gain = 466.391
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/DecimationFilter/edit_DecimationFilter_v1_0.runs/synth_1/DecimationFilter_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DecimationFilter_v1_0_utilization_synth.rpt -pb DecimationFilter_v1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 693.859 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 17 21:54:05 2018...

@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../ADC_fpga_d_1/src/pixel_buffer/pixel_buffer_sim_netlist.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

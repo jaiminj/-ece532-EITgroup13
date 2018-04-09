@@ -1,0 +1,416 @@
+
+*** Running vivado
+    with args -log PhaseDetector_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PhaseDetector_v1_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source PhaseDetector_v1_0.tcl -notrace
+Command: synth_design -top PhaseDetector_v1_0 -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16720 
+WARNING: [Synth 8-2507] parameter declaration becomes local in PhaseDetector_v1_0_S00_AXI with formal parameter declaration list [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:588]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 352.891 ; gain = 113.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PhaseDetector_v1_0' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'PhaseDetector_v1_0_S00_AXI' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_COUNTS bound to: 5000 - type: integer 
+	Parameter C_DEGREES bound to: 92160 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter LAG bound to: 2'b01 
+	Parameter LEAD bound to: 2'b10 
+	Parameter EVEN bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:245]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:386]
+WARNING: [Synth 8-6014] Unused sequential element MAX_VAL_TEST_reg was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:440]
+WARNING: [Synth 8-6014] Unused sequential element freq_val_reg was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:441]
+WARNING: [Synth 8-6014] Unused sequential element MAX_VAL_REF_reg was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:459]
+WARNING: [Synth 8-6014] Unused sequential element clock_counter_reg was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:596]
+WARNING: [Synth 8-6014] Unused sequential element clock_trigger_reg was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:597]
+WARNING: [Synth 8-5788] Register phase_temp_reg in module PhaseDetector_v1_0_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:665]
+WARNING: [Synth 8-5788] Register phase_reg in module PhaseDetector_v1_0_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:713]
+INFO: [Synth 8-256] done synthesizing module 'PhaseDetector_v1_0_S00_AXI' (1#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'PhaseDetector_v1_0' (2#1) [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0.v:4]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[13]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[12]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[11]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[10]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[9]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[8]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[7]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[6]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[5]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[4]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[3]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[2]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[1]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[0]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[14]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[13]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[12]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[11]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[10]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[9]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[8]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[7]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[6]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[5]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[4]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[3]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[2]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[1]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[0]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[15]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[14]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[13]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[12]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[11]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[10]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[9]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[8]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[7]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[6]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[5]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[4]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[3]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[2]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[1]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[0]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[14]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[13]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[12]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[11]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[10]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[9]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[8]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[7]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[6]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[5]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[4]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[3]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[2]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[1]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port TEST_SIG[0]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 386.234 ; gain = 146.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 386.234 ; gain = 146.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 386.234 ; gain = 146.570
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'flag_null_reg' into 'flag_equal_reg' [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:704]
+WARNING: [Synth 8-6014] Unused sequential element flag_null_reg was removed.  [c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/PhaseDetector_1.0/hdl/PhaseDetector_v1_0_S00_AXI.v:704]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 386.234 ; gain = 146.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 6     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PhaseDetector_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 6     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[13]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[12]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[11]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[10]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[9]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[8]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[7]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[6]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[5]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[4]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[3]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[2]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[1]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port FREQ[0]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[14]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[13]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[12]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[11]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[10]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[9]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[8]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[7]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[6]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[5]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[4]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[3]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[2]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[1]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port REF_SINE[0]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[15]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[14]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[13]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[12]
+WARNING: [Synth 8-3331] design PhaseDetector_v1_0_S00_AXI has unconnected port DEC_OUT[11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PhaseDetector_v1_0_S00_AXI_inst/ref_count_reg[13] )
+INFO: [Synth 8-3886] merging instance 'PhaseDetector_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'PhaseDetector_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PhaseDetector_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'PhaseDetector_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'PhaseDetector_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PhaseDetector_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PhaseDetector_v1_0_S00_AXI_inst/flag_equal_reg )
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/flag_equal_reg) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/ref_count_reg[13]) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module PhaseDetector_v1_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 585.332 ; gain = 345.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 585.332 ; gain = 345.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[9]_P) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[8]_P) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[7]_P) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[6]_P) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[5]_P) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[4]_P) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[3]_P) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[2]_P) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[1]_P) is unused and will be removed from module PhaseDetector_v1_0.
+WARNING: [Synth 8-3332] Sequential element (PhaseDetector_v1_0_S00_AXI_inst/phase_temp_reg[0]_P) is unused and will be removed from module PhaseDetector_v1_0.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 586.227 ; gain = 346.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 586.227 ; gain = 346.563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 586.227 ; gain = 346.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 586.227 ; gain = 346.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 586.227 ; gain = 346.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 586.227 ; gain = 346.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 586.227 ; gain = 346.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   189|
+|3     |LUT1   |    68|
+|4     |LUT2   |   122|
+|5     |LUT3   |   571|
+|6     |LUT4   |    38|
+|7     |LUT5   |     3|
+|8     |LUT6   |    35|
+|9     |FDCE   |    33|
+|10    |FDRE   |   189|
+|11    |FDSE   |     1|
+|12    |IBUF   |    51|
+|13    |OBUF   |    57|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------------+---------------------------+------+
+|      |Instance                          |Module                     |Cells |
++------+----------------------------------+---------------------------+------+
+|1     |top                               |                           |  1359|
+|2     |  PhaseDetector_v1_0_S00_AXI_inst |PhaseDetector_v1_0_S00_AXI |  1249|
++------+----------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 586.227 ; gain = 346.563
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 159 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 586.227 ; gain = 346.563
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 586.227 ; gain = 346.563
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 240 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'PhaseDetector_v1_0' is not ideal for floorplanning, since the cellview 'PhaseDetector_v1_0_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 691.527 ; gain = 463.793
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Jaimin/XilinxProjects/MEngProject/IPs/PhaseDetector/edit_PhaseDetector_v1_0.runs/synth_1/PhaseDetector_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PhaseDetector_v1_0_utilization_synth.rpt -pb PhaseDetector_v1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 691.527 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 24 14:59:35 2018...

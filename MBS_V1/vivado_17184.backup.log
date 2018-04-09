@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar 21 02:11:07 2018
+# Process ID: 17184
+# Current directory: D:/AlienWare/Course/ECE532/s/MBS_V1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10912 D:\AlienWare\Course\ECE532\s\MBS_V1\MicroBlazeServer.xpr
+# Log file: D:/AlienWare/Course/ECE532/s/MBS_V1/vivado.log
+# Journal file: D:/AlienWare/Course/ECE532/s/MBS_V1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/AlienWare/Course/ECE532/s/MBS_V1/MicroBlazeServer.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/AlienWare/Course/ECE532/s/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_lmb_bram_1' generated file not found 'd:/AlienWare/Course/ECE532/s/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_1/015bea9d316e1fe9.xci.baiduyun.uploading.cfg'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 990.023 ; gain = 283.938
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1964 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/AlienWare/Course/ECE532/s/MBS_V1/.Xil/Vivado-17184-DESKTOP-6HDQGGD/dcp0/design_1_wrapper_board.xdc]
+Finished Parsing XDC File [D:/AlienWare/Course/ECE532/s/MBS_V1/.Xil/Vivado-17184-DESKTOP-6HDQGGD/dcp0/design_1_wrapper_board.xdc]
+Parsing XDC File [D:/AlienWare/Course/ECE532/s/MBS_V1/.Xil/Vivado-17184-DESKTOP-6HDQGGD/dcp0/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/AlienWare/Course/ECE532/s/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.xdc:50]
+get_clocks: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2107.098 ; gain = 614.637
+INFO: [Timing 38-2] Deriving generated clocks [D:/AlienWare/Course/ECE532/s/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1.xdc:57]
+Finished Parsing XDC File [D:/AlienWare/Course/ECE532/s/MBS_V1/.Xil/Vivado-17184-DESKTOP-6HDQGGD/dcp0/design_1_wrapper_early.xdc]
+Parsing XDC File [D:/AlienWare/Course/ECE532/s/MBS_V1/.Xil/Vivado-17184-DESKTOP-6HDQGGD/dcp0/design_1_wrapper.xdc]
+Finished Parsing XDC File [D:/AlienWare/Course/ECE532/s/MBS_V1/.Xil/Vivado-17184-DESKTOP-6HDQGGD/dcp0/design_1_wrapper.xdc]
+Parsing XDC File [D:/AlienWare/Course/ECE532/s/MBS_V1/.Xil/Vivado-17184-DESKTOP-6HDQGGD/dcp0/design_1_wrapper_late.xdc]
+Finished Parsing XDC File [D:/AlienWare/Course/ECE532/s/MBS_V1/.Xil/Vivado-17184-DESKTOP-6HDQGGD/dcp0/design_1_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2195.879 ; gain = 37.211
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2195.879 ; gain = 37.211
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: d:/AlienWare/Course/ECE532/s/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_1/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 527 instances were transformed.
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 78 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 128 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 33 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 235 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  SRLC16E => SRL16E: 1 instances
+  SRLC32E => SRL16E: 1 instances
+
+open_run: Time (s): cpu = 00:01:05 ; elapsed = 00:00:54 . Memory (MB): peak = 2298.695 ; gain = 1308.672
+open_report: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2557.371 ; gain = 223.699
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A5ACB
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/s/MBS_V1/MicroBlazeServer.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 4 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 3165.805 ; gain = 16.793
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {D:/AlienWare/Course/ECE532/s/MBS_V1/MicroBlazeServer.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3165.805 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 21 10:01:20 2018...

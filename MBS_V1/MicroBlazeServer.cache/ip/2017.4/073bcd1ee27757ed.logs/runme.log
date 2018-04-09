@@ -1,0 +1,1106 @@
+
+*** Running vivado
+    with args -log design_1_clock_gen_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_clock_gen_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_clock_gen_0_0.tcl -notrace
+Command: synth_design -top design_1_clock_gen_0_0 -part xc7a200tsbg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14916 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 433.746 ; gain = 101.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_clock_gen_0_0' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ip/design_1_clock_gen_0_0/synth/design_1_clock_gen_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'clock_gen_v2' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clock_gen_v2_S00_AXI' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element enable_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1152]
+WARNING: [Synth 8-6014] Unused sequential element null_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1153]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer12_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1176]
+WARNING: [Synth 8-6014] Unused sequential element count_all_half_slow_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1243]
+WARNING: [Synth 8-6014] Unused sequential element condition_1_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1282]
+WARNING: [Synth 8-6014] Unused sequential element condition_1_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1283]
+WARNING: [Synth 8-6014] Unused sequential element condition_2_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1285]
+WARNING: [Synth 8-6014] Unused sequential element condition_3_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1287]
+WARNING: [Synth 8-6014] Unused sequential element condition_4_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1289]
+WARNING: [Synth 8-6014] Unused sequential element condition_5_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1291]
+WARNING: [Synth 8-6014] Unused sequential element condition_6_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1293]
+WARNING: [Synth 8-6014] Unused sequential element condition_7_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1295]
+WARNING: [Synth 8-6014] Unused sequential element condition_8_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1297]
+WARNING: [Synth 8-6014] Unused sequential element condition_9_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1299]
+WARNING: [Synth 8-6014] Unused sequential element condition_10_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1301]
+WARNING: [Synth 8-6014] Unused sequential element condition_12_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1304]
+WARNING: [Synth 8-6014] Unused sequential element condition_12_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1305]
+WARNING: [Synth 8-6014] Unused sequential element condition_13_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1306]
+WARNING: [Synth 8-6014] Unused sequential element condition_13_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1307]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer2_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1166]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer3_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1167]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer4_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1168]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer5_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1169]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer6_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1170]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer7_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1171]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer8_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1172]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer9_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1173]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer10_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1174]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer11_reg[31:0]' into 'counter_1ns_buffer1_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1175]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer_sample_tr_reg[31:0]' into 'counter_1ns_buffer_sample_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1178]
+INFO: [Synth 8-4471] merging register 'counter_1ns_buffer_sample_c_reg[31:0]' into 'counter_1ns_buffer_sample_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1179]
+INFO: [Synth 8-4471] merging register 'counter_1_ns_large_reg[31:0]' into 'counter_1ns_buffer_sample_reg[31:0]' [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1180]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1166]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer3_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1167]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer4_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1168]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer5_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1169]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer6_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1170]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer7_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1171]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer8_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1172]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer9_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1173]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer10_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1174]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer11_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1175]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer_sample_tr_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1178]
+WARNING: [Synth 8-6014] Unused sequential element counter_1ns_buffer_sample_c_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1179]
+WARNING: [Synth 8-6014] Unused sequential element counter_1_ns_large_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1180]
+WARNING: [Synth 8-5788] Register count_upto_all_slow_reg in module clock_gen_v2_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1244]
+WARNING: [Synth 8-5788] Register count_all_half_reg in module clock_gen_v2_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1245]
+WARNING: [Synth 8-5788] Register condition_sample_1_reg in module clock_gen_v2_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1322]
+WARNING: [Synth 8-5788] Register condition_sample_c_1_reg in module clock_gen_v2_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1323]
+WARNING: [Synth 8-5788] Register condition_sample_tr_1_reg in module clock_gen_v2_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1324]
+INFO: [Synth 8-256] done synthesizing module 'clock_gen_v2_S00_AXI' (1#1) [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'clock_gen_v2' (2#1) [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clock_gen_0_0' (3#1) [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ip/design_1_clock_gen_0_0/synth/design_1_clock_gen_0_0.v:57]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 508.883 ; gain = 176.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 508.883 ; gain = 176.250
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 893.723 ; gain = 0.043
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 893.723 ; gain = 561.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 893.723 ; gain = 561.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 893.723 ; gain = 561.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 893.723 ; gain = 561.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 18    
++---Registers : 
+	               32 Bit    Registers := 97    
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 62    
++---Multipliers : 
+	                32x32  Multipliers := 29    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_gen_v2_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 18    
++---Registers : 
+	               32 Bit    Registers := 97    
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 62    
++---Multipliers : 
+	                32x32  Multipliers := 29    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1245]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1266]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1265]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1248]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1247]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1250]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1249]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1252]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1251]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1254]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1253]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1256]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1255]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1258]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1257]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1260]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1259]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1262]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1261]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1264]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1263]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1268]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1267]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1272]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1271]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1270]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1269]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1244]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1246]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_10_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1233]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_10_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1232]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1215]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_1_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1214]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_2_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1217]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_2_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1216]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_3_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1219]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_3_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1218]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_4_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1221]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_4_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1220]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_5_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1223]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_5_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1222]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_6_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1225]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_6_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1224]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_7_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1227]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_7_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1226]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_8_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1229]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_8_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1228]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_9_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1231]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_9_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1230]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_sample_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1235]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_sample_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1234]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_sample_tr_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1237]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_sample_tr_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1236]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_sample_c_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1239]
+WARNING: [Synth 8-6014] Unused sequential element count_upto_sample_c_1_reg was removed.  [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1238]
+DSP Report: Generating DSP count_all_half1, operation Mode is: A*B.
+DSP Report: operator count_all_half1 is absorbed into DSP count_all_half1.
+DSP Report: operator count_all_half1 is absorbed into DSP count_all_half1.
+DSP Report: Generating DSP count_all_half1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_all_half1 is absorbed into DSP count_all_half1.
+DSP Report: operator count_all_half1 is absorbed into DSP count_all_half1.
+DSP Report: Generating DSP count_all_half1, operation Mode is: A*B.
+DSP Report: operator count_all_half1 is absorbed into DSP count_all_half1.
+DSP Report: operator count_all_half1 is absorbed into DSP count_all_half1.
+DSP Report: Generating DSP count_all_half1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_all_half1 is absorbed into DSP count_all_half1.
+DSP Report: operator count_all_half1 is absorbed into DSP count_all_half1.
+DSP Report: Generating DSP count_upto_100, operation Mode is: A*B.
+DSP Report: operator count_upto_100 is absorbed into DSP count_upto_100.
+DSP Report: operator count_upto_100 is absorbed into DSP count_upto_100.
+DSP Report: Generating DSP count_upto_100, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_100 is absorbed into DSP count_upto_100.
+DSP Report: operator count_upto_100 is absorbed into DSP count_upto_100.
+DSP Report: Generating DSP count_upto_100, operation Mode is: A*B.
+DSP Report: operator count_upto_100 is absorbed into DSP count_upto_100.
+DSP Report: operator count_upto_100 is absorbed into DSP count_upto_100.
+DSP Report: Generating DSP count_upto_100, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_100 is absorbed into DSP count_upto_100.
+DSP Report: operator count_upto_100 is absorbed into DSP count_upto_100.
+DSP Report: Generating DSP count_upto_10_10, operation Mode is: A*B.
+DSP Report: operator count_upto_10_10 is absorbed into DSP count_upto_10_10.
+DSP Report: operator count_upto_10_10 is absorbed into DSP count_upto_10_10.
+DSP Report: Generating DSP count_upto_10_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_10_10 is absorbed into DSP count_upto_10_10.
+DSP Report: operator count_upto_10_10 is absorbed into DSP count_upto_10_10.
+DSP Report: Generating DSP count_upto_10_10, operation Mode is: A*B.
+DSP Report: operator count_upto_10_10 is absorbed into DSP count_upto_10_10.
+DSP Report: operator count_upto_10_10 is absorbed into DSP count_upto_10_10.
+DSP Report: Generating DSP count_upto_10_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_10_10 is absorbed into DSP count_upto_10_10.
+DSP Report: operator count_upto_10_10 is absorbed into DSP count_upto_10_10.
+DSP Report: Generating DSP count_upto_10, operation Mode is: A*B.
+DSP Report: operator count_upto_10 is absorbed into DSP count_upto_10.
+DSP Report: operator count_upto_10 is absorbed into DSP count_upto_10.
+DSP Report: Generating DSP count_upto_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_10 is absorbed into DSP count_upto_10.
+DSP Report: operator count_upto_10 is absorbed into DSP count_upto_10.
+DSP Report: Generating DSP count_upto_10, operation Mode is: A*B.
+DSP Report: operator count_upto_10 is absorbed into DSP count_upto_10.
+DSP Report: operator count_upto_10 is absorbed into DSP count_upto_10.
+DSP Report: Generating DSP count_upto_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_10 is absorbed into DSP count_upto_10.
+DSP Report: operator count_upto_10 is absorbed into DSP count_upto_10.
+DSP Report: Generating DSP count_upto_1_10, operation Mode is: A*B.
+DSP Report: operator count_upto_1_10 is absorbed into DSP count_upto_1_10.
+DSP Report: operator count_upto_1_10 is absorbed into DSP count_upto_1_10.
+DSP Report: Generating DSP count_upto_1_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_1_10 is absorbed into DSP count_upto_1_10.
+DSP Report: operator count_upto_1_10 is absorbed into DSP count_upto_1_10.
+DSP Report: Generating DSP count_upto_1_10, operation Mode is: A*B.
+DSP Report: operator count_upto_1_10 is absorbed into DSP count_upto_1_10.
+DSP Report: operator count_upto_1_10 is absorbed into DSP count_upto_1_10.
+DSP Report: Generating DSP count_upto_1_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_1_10 is absorbed into DSP count_upto_1_10.
+DSP Report: operator count_upto_1_10 is absorbed into DSP count_upto_1_10.
+DSP Report: Generating DSP count_upto_20, operation Mode is: A*B.
+DSP Report: operator count_upto_20 is absorbed into DSP count_upto_20.
+DSP Report: operator count_upto_20 is absorbed into DSP count_upto_20.
+DSP Report: Generating DSP count_upto_20, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_20 is absorbed into DSP count_upto_20.
+DSP Report: operator count_upto_20 is absorbed into DSP count_upto_20.
+DSP Report: Generating DSP count_upto_20, operation Mode is: A*B.
+DSP Report: operator count_upto_20 is absorbed into DSP count_upto_20.
+DSP Report: operator count_upto_20 is absorbed into DSP count_upto_20.
+DSP Report: Generating DSP count_upto_20, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_20 is absorbed into DSP count_upto_20.
+DSP Report: operator count_upto_20 is absorbed into DSP count_upto_20.
+DSP Report: Generating DSP count_upto_2_10, operation Mode is: A*B.
+DSP Report: operator count_upto_2_10 is absorbed into DSP count_upto_2_10.
+DSP Report: operator count_upto_2_10 is absorbed into DSP count_upto_2_10.
+DSP Report: Generating DSP count_upto_2_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_2_10 is absorbed into DSP count_upto_2_10.
+DSP Report: operator count_upto_2_10 is absorbed into DSP count_upto_2_10.
+DSP Report: Generating DSP count_upto_2_10, operation Mode is: A*B.
+DSP Report: operator count_upto_2_10 is absorbed into DSP count_upto_2_10.
+DSP Report: operator count_upto_2_10 is absorbed into DSP count_upto_2_10.
+DSP Report: Generating DSP count_upto_2_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_2_10 is absorbed into DSP count_upto_2_10.
+DSP Report: operator count_upto_2_10 is absorbed into DSP count_upto_2_10.
+DSP Report: Generating DSP count_upto_30, operation Mode is: A*B.
+DSP Report: operator count_upto_30 is absorbed into DSP count_upto_30.
+DSP Report: operator count_upto_30 is absorbed into DSP count_upto_30.
+DSP Report: Generating DSP count_upto_30, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_30 is absorbed into DSP count_upto_30.
+DSP Report: operator count_upto_30 is absorbed into DSP count_upto_30.
+DSP Report: Generating DSP count_upto_30, operation Mode is: A*B.
+DSP Report: operator count_upto_30 is absorbed into DSP count_upto_30.
+DSP Report: operator count_upto_30 is absorbed into DSP count_upto_30.
+DSP Report: Generating DSP count_upto_30, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_30 is absorbed into DSP count_upto_30.
+DSP Report: operator count_upto_30 is absorbed into DSP count_upto_30.
+DSP Report: Generating DSP count_upto_3_10, operation Mode is: A*B.
+DSP Report: operator count_upto_3_10 is absorbed into DSP count_upto_3_10.
+DSP Report: operator count_upto_3_10 is absorbed into DSP count_upto_3_10.
+DSP Report: Generating DSP count_upto_3_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_3_10 is absorbed into DSP count_upto_3_10.
+DSP Report: operator count_upto_3_10 is absorbed into DSP count_upto_3_10.
+DSP Report: Generating DSP count_upto_3_10, operation Mode is: A*B.
+DSP Report: operator count_upto_3_10 is absorbed into DSP count_upto_3_10.
+DSP Report: operator count_upto_3_10 is absorbed into DSP count_upto_3_10.
+DSP Report: Generating DSP count_upto_3_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_3_10 is absorbed into DSP count_upto_3_10.
+DSP Report: operator count_upto_3_10 is absorbed into DSP count_upto_3_10.
+DSP Report: Generating DSP count_upto_40, operation Mode is: A*B.
+DSP Report: operator count_upto_40 is absorbed into DSP count_upto_40.
+DSP Report: operator count_upto_40 is absorbed into DSP count_upto_40.
+DSP Report: Generating DSP count_upto_40, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_40 is absorbed into DSP count_upto_40.
+DSP Report: operator count_upto_40 is absorbed into DSP count_upto_40.
+DSP Report: Generating DSP count_upto_40, operation Mode is: A*B.
+DSP Report: operator count_upto_40 is absorbed into DSP count_upto_40.
+DSP Report: operator count_upto_40 is absorbed into DSP count_upto_40.
+DSP Report: Generating DSP count_upto_40, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_40 is absorbed into DSP count_upto_40.
+DSP Report: operator count_upto_40 is absorbed into DSP count_upto_40.
+DSP Report: Generating DSP count_upto_4_10, operation Mode is: A*B.
+DSP Report: operator count_upto_4_10 is absorbed into DSP count_upto_4_10.
+DSP Report: operator count_upto_4_10 is absorbed into DSP count_upto_4_10.
+DSP Report: Generating DSP count_upto_4_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_4_10 is absorbed into DSP count_upto_4_10.
+DSP Report: operator count_upto_4_10 is absorbed into DSP count_upto_4_10.
+DSP Report: Generating DSP count_upto_4_10, operation Mode is: A*B.
+DSP Report: operator count_upto_4_10 is absorbed into DSP count_upto_4_10.
+DSP Report: operator count_upto_4_10 is absorbed into DSP count_upto_4_10.
+DSP Report: Generating DSP count_upto_4_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_4_10 is absorbed into DSP count_upto_4_10.
+DSP Report: operator count_upto_4_10 is absorbed into DSP count_upto_4_10.
+DSP Report: Generating DSP count_upto_50, operation Mode is: A*B.
+DSP Report: operator count_upto_50 is absorbed into DSP count_upto_50.
+DSP Report: operator count_upto_50 is absorbed into DSP count_upto_50.
+DSP Report: Generating DSP count_upto_50, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_50 is absorbed into DSP count_upto_50.
+DSP Report: operator count_upto_50 is absorbed into DSP count_upto_50.
+DSP Report: Generating DSP count_upto_50, operation Mode is: A*B.
+DSP Report: operator count_upto_50 is absorbed into DSP count_upto_50.
+DSP Report: operator count_upto_50 is absorbed into DSP count_upto_50.
+DSP Report: Generating DSP count_upto_50, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_50 is absorbed into DSP count_upto_50.
+DSP Report: operator count_upto_50 is absorbed into DSP count_upto_50.
+DSP Report: Generating DSP count_upto_5_10, operation Mode is: A*B.
+DSP Report: operator count_upto_5_10 is absorbed into DSP count_upto_5_10.
+DSP Report: operator count_upto_5_10 is absorbed into DSP count_upto_5_10.
+DSP Report: Generating DSP count_upto_5_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_5_10 is absorbed into DSP count_upto_5_10.
+DSP Report: operator count_upto_5_10 is absorbed into DSP count_upto_5_10.
+DSP Report: Generating DSP count_upto_5_10, operation Mode is: A*B.
+DSP Report: operator count_upto_5_10 is absorbed into DSP count_upto_5_10.
+DSP Report: operator count_upto_5_10 is absorbed into DSP count_upto_5_10.
+DSP Report: Generating DSP count_upto_5_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_5_10 is absorbed into DSP count_upto_5_10.
+DSP Report: operator count_upto_5_10 is absorbed into DSP count_upto_5_10.
+DSP Report: Generating DSP count_upto_60, operation Mode is: A*B.
+DSP Report: operator count_upto_60 is absorbed into DSP count_upto_60.
+DSP Report: operator count_upto_60 is absorbed into DSP count_upto_60.
+DSP Report: Generating DSP count_upto_60, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_60 is absorbed into DSP count_upto_60.
+DSP Report: operator count_upto_60 is absorbed into DSP count_upto_60.
+DSP Report: Generating DSP count_upto_60, operation Mode is: A*B.
+DSP Report: operator count_upto_60 is absorbed into DSP count_upto_60.
+DSP Report: operator count_upto_60 is absorbed into DSP count_upto_60.
+DSP Report: Generating DSP count_upto_60, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_60 is absorbed into DSP count_upto_60.
+DSP Report: operator count_upto_60 is absorbed into DSP count_upto_60.
+DSP Report: Generating DSP count_upto_6_10, operation Mode is: A*B.
+DSP Report: operator count_upto_6_10 is absorbed into DSP count_upto_6_10.
+DSP Report: operator count_upto_6_10 is absorbed into DSP count_upto_6_10.
+DSP Report: Generating DSP count_upto_6_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_6_10 is absorbed into DSP count_upto_6_10.
+DSP Report: operator count_upto_6_10 is absorbed into DSP count_upto_6_10.
+DSP Report: Generating DSP count_upto_6_10, operation Mode is: A*B.
+DSP Report: operator count_upto_6_10 is absorbed into DSP count_upto_6_10.
+DSP Report: operator count_upto_6_10 is absorbed into DSP count_upto_6_10.
+DSP Report: Generating DSP count_upto_6_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_6_10 is absorbed into DSP count_upto_6_10.
+DSP Report: operator count_upto_6_10 is absorbed into DSP count_upto_6_10.
+DSP Report: Generating DSP count_upto_70, operation Mode is: A*B.
+DSP Report: operator count_upto_70 is absorbed into DSP count_upto_70.
+DSP Report: operator count_upto_70 is absorbed into DSP count_upto_70.
+DSP Report: Generating DSP count_upto_70, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_70 is absorbed into DSP count_upto_70.
+DSP Report: operator count_upto_70 is absorbed into DSP count_upto_70.
+DSP Report: Generating DSP count_upto_70, operation Mode is: A*B.
+DSP Report: operator count_upto_70 is absorbed into DSP count_upto_70.
+DSP Report: operator count_upto_70 is absorbed into DSP count_upto_70.
+DSP Report: Generating DSP count_upto_70, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_70 is absorbed into DSP count_upto_70.
+DSP Report: operator count_upto_70 is absorbed into DSP count_upto_70.
+DSP Report: Generating DSP count_upto_7_10, operation Mode is: A*B.
+DSP Report: operator count_upto_7_10 is absorbed into DSP count_upto_7_10.
+DSP Report: operator count_upto_7_10 is absorbed into DSP count_upto_7_10.
+DSP Report: Generating DSP count_upto_7_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_7_10 is absorbed into DSP count_upto_7_10.
+DSP Report: operator count_upto_7_10 is absorbed into DSP count_upto_7_10.
+DSP Report: Generating DSP count_upto_7_10, operation Mode is: A*B.
+DSP Report: operator count_upto_7_10 is absorbed into DSP count_upto_7_10.
+DSP Report: operator count_upto_7_10 is absorbed into DSP count_upto_7_10.
+DSP Report: Generating DSP count_upto_7_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_7_10 is absorbed into DSP count_upto_7_10.
+DSP Report: operator count_upto_7_10 is absorbed into DSP count_upto_7_10.
+DSP Report: Generating DSP count_upto_80, operation Mode is: A*B.
+DSP Report: operator count_upto_80 is absorbed into DSP count_upto_80.
+DSP Report: operator count_upto_80 is absorbed into DSP count_upto_80.
+DSP Report: Generating DSP count_upto_80, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_80 is absorbed into DSP count_upto_80.
+DSP Report: operator count_upto_80 is absorbed into DSP count_upto_80.
+DSP Report: Generating DSP count_upto_80, operation Mode is: A*B.
+DSP Report: operator count_upto_80 is absorbed into DSP count_upto_80.
+DSP Report: operator count_upto_80 is absorbed into DSP count_upto_80.
+DSP Report: Generating DSP count_upto_80, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_80 is absorbed into DSP count_upto_80.
+DSP Report: operator count_upto_80 is absorbed into DSP count_upto_80.
+DSP Report: Generating DSP count_upto_8_10, operation Mode is: A*B.
+DSP Report: operator count_upto_8_10 is absorbed into DSP count_upto_8_10.
+DSP Report: operator count_upto_8_10 is absorbed into DSP count_upto_8_10.
+DSP Report: Generating DSP count_upto_8_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_8_10 is absorbed into DSP count_upto_8_10.
+DSP Report: operator count_upto_8_10 is absorbed into DSP count_upto_8_10.
+DSP Report: Generating DSP count_upto_8_10, operation Mode is: A*B.
+DSP Report: operator count_upto_8_10 is absorbed into DSP count_upto_8_10.
+DSP Report: operator count_upto_8_10 is absorbed into DSP count_upto_8_10.
+DSP Report: Generating DSP count_upto_8_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_8_10 is absorbed into DSP count_upto_8_10.
+DSP Report: operator count_upto_8_10 is absorbed into DSP count_upto_8_10.
+DSP Report: Generating DSP count_upto_90, operation Mode is: A*B.
+DSP Report: operator count_upto_90 is absorbed into DSP count_upto_90.
+DSP Report: operator count_upto_90 is absorbed into DSP count_upto_90.
+DSP Report: Generating DSP count_upto_90, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_90 is absorbed into DSP count_upto_90.
+DSP Report: operator count_upto_90 is absorbed into DSP count_upto_90.
+DSP Report: Generating DSP count_upto_90, operation Mode is: A*B.
+DSP Report: operator count_upto_90 is absorbed into DSP count_upto_90.
+DSP Report: operator count_upto_90 is absorbed into DSP count_upto_90.
+DSP Report: Generating DSP count_upto_90, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_90 is absorbed into DSP count_upto_90.
+DSP Report: operator count_upto_90 is absorbed into DSP count_upto_90.
+DSP Report: Generating DSP count_upto_9_10, operation Mode is: A*B.
+DSP Report: operator count_upto_9_10 is absorbed into DSP count_upto_9_10.
+DSP Report: operator count_upto_9_10 is absorbed into DSP count_upto_9_10.
+DSP Report: Generating DSP count_upto_9_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_9_10 is absorbed into DSP count_upto_9_10.
+DSP Report: operator count_upto_9_10 is absorbed into DSP count_upto_9_10.
+DSP Report: Generating DSP count_upto_9_10, operation Mode is: A*B.
+DSP Report: operator count_upto_9_10 is absorbed into DSP count_upto_9_10.
+DSP Report: operator count_upto_9_10 is absorbed into DSP count_upto_9_10.
+DSP Report: Generating DSP count_upto_9_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_9_10 is absorbed into DSP count_upto_9_10.
+DSP Report: operator count_upto_9_10 is absorbed into DSP count_upto_9_10.
+DSP Report: Generating DSP count_upto_sample0, operation Mode is: A*B.
+DSP Report: operator count_upto_sample0 is absorbed into DSP count_upto_sample0.
+DSP Report: operator count_upto_sample0 is absorbed into DSP count_upto_sample0.
+DSP Report: Generating DSP count_upto_sample0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample0 is absorbed into DSP count_upto_sample0.
+DSP Report: operator count_upto_sample0 is absorbed into DSP count_upto_sample0.
+DSP Report: Generating DSP count_upto_sample0, operation Mode is: A*B.
+DSP Report: operator count_upto_sample0 is absorbed into DSP count_upto_sample0.
+DSP Report: operator count_upto_sample0 is absorbed into DSP count_upto_sample0.
+DSP Report: Generating DSP count_upto_sample0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample0 is absorbed into DSP count_upto_sample0.
+DSP Report: operator count_upto_sample0 is absorbed into DSP count_upto_sample0.
+DSP Report: Generating DSP count_upto_sample_10, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_10 is absorbed into DSP count_upto_sample_10.
+DSP Report: operator count_upto_sample_10 is absorbed into DSP count_upto_sample_10.
+DSP Report: Generating DSP count_upto_sample_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_10 is absorbed into DSP count_upto_sample_10.
+DSP Report: operator count_upto_sample_10 is absorbed into DSP count_upto_sample_10.
+DSP Report: Generating DSP count_upto_sample_10, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_10 is absorbed into DSP count_upto_sample_10.
+DSP Report: operator count_upto_sample_10 is absorbed into DSP count_upto_sample_10.
+DSP Report: Generating DSP count_upto_sample_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_10 is absorbed into DSP count_upto_sample_10.
+DSP Report: operator count_upto_sample_10 is absorbed into DSP count_upto_sample_10.
+DSP Report: Generating DSP count_upto_sample_tr0, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_tr0 is absorbed into DSP count_upto_sample_tr0.
+DSP Report: operator count_upto_sample_tr0 is absorbed into DSP count_upto_sample_tr0.
+DSP Report: Generating DSP count_upto_sample_tr0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_tr0 is absorbed into DSP count_upto_sample_tr0.
+DSP Report: operator count_upto_sample_tr0 is absorbed into DSP count_upto_sample_tr0.
+DSP Report: Generating DSP count_upto_sample_tr0, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_tr0 is absorbed into DSP count_upto_sample_tr0.
+DSP Report: operator count_upto_sample_tr0 is absorbed into DSP count_upto_sample_tr0.
+DSP Report: Generating DSP count_upto_sample_tr0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_tr0 is absorbed into DSP count_upto_sample_tr0.
+DSP Report: operator count_upto_sample_tr0 is absorbed into DSP count_upto_sample_tr0.
+DSP Report: Generating DSP count_upto_sample_tr_10, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_tr_10 is absorbed into DSP count_upto_sample_tr_10.
+DSP Report: operator count_upto_sample_tr_10 is absorbed into DSP count_upto_sample_tr_10.
+DSP Report: Generating DSP count_upto_sample_tr_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_tr_10 is absorbed into DSP count_upto_sample_tr_10.
+DSP Report: operator count_upto_sample_tr_10 is absorbed into DSP count_upto_sample_tr_10.
+DSP Report: Generating DSP count_upto_sample_tr_10, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_tr_10 is absorbed into DSP count_upto_sample_tr_10.
+DSP Report: operator count_upto_sample_tr_10 is absorbed into DSP count_upto_sample_tr_10.
+DSP Report: Generating DSP count_upto_sample_tr_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_tr_10 is absorbed into DSP count_upto_sample_tr_10.
+DSP Report: operator count_upto_sample_tr_10 is absorbed into DSP count_upto_sample_tr_10.
+DSP Report: Generating DSP count_upto_sample_c0, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_c0 is absorbed into DSP count_upto_sample_c0.
+DSP Report: operator count_upto_sample_c0 is absorbed into DSP count_upto_sample_c0.
+DSP Report: Generating DSP count_upto_sample_c0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_c0 is absorbed into DSP count_upto_sample_c0.
+DSP Report: operator count_upto_sample_c0 is absorbed into DSP count_upto_sample_c0.
+DSP Report: Generating DSP count_upto_sample_c0, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_c0 is absorbed into DSP count_upto_sample_c0.
+DSP Report: operator count_upto_sample_c0 is absorbed into DSP count_upto_sample_c0.
+DSP Report: Generating DSP count_upto_sample_c0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_c0 is absorbed into DSP count_upto_sample_c0.
+DSP Report: operator count_upto_sample_c0 is absorbed into DSP count_upto_sample_c0.
+DSP Report: Generating DSP count_upto_sample_c_10, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_c_10 is absorbed into DSP count_upto_sample_c_10.
+DSP Report: operator count_upto_sample_c_10 is absorbed into DSP count_upto_sample_c_10.
+DSP Report: Generating DSP count_upto_sample_c_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_c_10 is absorbed into DSP count_upto_sample_c_10.
+DSP Report: operator count_upto_sample_c_10 is absorbed into DSP count_upto_sample_c_10.
+DSP Report: Generating DSP count_upto_sample_c_10, operation Mode is: A*B.
+DSP Report: operator count_upto_sample_c_10 is absorbed into DSP count_upto_sample_c_10.
+DSP Report: operator count_upto_sample_c_10 is absorbed into DSP count_upto_sample_c_10.
+DSP Report: Generating DSP count_upto_sample_c_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_sample_c_10 is absorbed into DSP count_upto_sample_c_10.
+DSP Report: operator count_upto_sample_c_10 is absorbed into DSP count_upto_sample_c_10.
+DSP Report: Generating DSP count_upto_all_slow1, operation Mode is: A*B.
+DSP Report: operator count_upto_all_slow1 is absorbed into DSP count_upto_all_slow1.
+DSP Report: operator count_upto_all_slow1 is absorbed into DSP count_upto_all_slow1.
+DSP Report: Generating DSP count_upto_all_slow1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_all_slow1 is absorbed into DSP count_upto_all_slow1.
+DSP Report: operator count_upto_all_slow1 is absorbed into DSP count_upto_all_slow1.
+DSP Report: Generating DSP count_upto_all_slow1, operation Mode is: A*B.
+DSP Report: operator count_upto_all_slow1 is absorbed into DSP count_upto_all_slow1.
+DSP Report: operator count_upto_all_slow1 is absorbed into DSP count_upto_all_slow1.
+DSP Report: Generating DSP count_upto_all_slow1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_all_slow1 is absorbed into DSP count_upto_all_slow1.
+DSP Report: operator count_upto_all_slow1 is absorbed into DSP count_upto_all_slow1.
+DSP Report: Generating DSP count_upto_all1, operation Mode is: A*B.
+DSP Report: operator count_upto_all1 is absorbed into DSP count_upto_all1.
+DSP Report: operator count_upto_all1 is absorbed into DSP count_upto_all1.
+DSP Report: Generating DSP count_upto_all1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_all1 is absorbed into DSP count_upto_all1.
+DSP Report: operator count_upto_all1 is absorbed into DSP count_upto_all1.
+DSP Report: Generating DSP count_upto_all1, operation Mode is: A*B.
+DSP Report: operator count_upto_all1 is absorbed into DSP count_upto_all1.
+DSP Report: operator count_upto_all1 is absorbed into DSP count_upto_all1.
+DSP Report: Generating DSP count_upto_all1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator count_upto_all1 is absorbed into DSP count_upto_all1.
+DSP Report: operator count_upto_all1 is absorbed into DSP count_upto_all1.
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design clock_gen_v2_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'inst/clock_gen_v2_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/clock_gen_v2_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/clock_gen_v2_S00_AXI_inst /\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/clock_gen_v2_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/clock_gen_v2_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/clock_gen_v2_S00_AXI_inst /\axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[47]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[46]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[45]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[44]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[43]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[42]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[41]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[40]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[39]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[38]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[37]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[36]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[35]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[34]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[33]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[32]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[31]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[30]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[29]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[28]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[27]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[26]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[25]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[24]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[23]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[22]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[21]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[20]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[19]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[18]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[17]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[16]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[15]) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[47]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[46]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[45]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[44]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[43]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[42]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[41]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[40]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[39]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[38]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[37]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[36]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[35]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[34]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[33]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[32]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[31]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[30]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[29]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[28]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[27]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[26]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[25]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[24]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[23]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[22]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[21]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[20]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[19]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[18]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[17]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[16]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[15]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[14]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[13]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[12]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[11]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[10]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[9]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[8]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[7]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[6]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[5]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[4]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[3]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[2]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[1]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[0]__0) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[47]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[46]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[45]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[44]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[43]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[42]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[41]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[40]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[39]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[38]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[37]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[36]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[35]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[34]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[33]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[32]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (count_upto_10_reg[31]__1) is unused and will be removed from module clock_gen_v2_S00_AXI.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 893.723 ; gain = 561.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|clock_gen_v2_S00_AXI | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 931.668 ; gain = 599.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 937.898 ; gain = 605.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1233]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1232]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1232]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1215]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1215]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1214]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1214]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1217]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1217]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1216]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1216]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1219]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1219]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1218]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1218]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1221]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1221]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1220]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1220]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1223]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1223]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1222]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1222]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1225]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1225]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1224]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1224]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1227]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1227]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1226]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1226]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1229]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1229]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1228]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1228]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1231]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1231]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1230]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1230]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1235]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1235]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1234]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1234]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1237]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1237]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1236]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1236]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1239]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1239]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1238]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.srcs/sources_1/bd/design_1/ipshared/85da/hdl/clock_gen_v2_S00_AXI.v:1238]
+INFO: [Synth 8-3886] merging instance 'i_7695' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7711' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7631' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7647' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7567' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7583' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_6927' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_6943' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7503' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7519' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7439' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7455' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7375' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7391' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7311' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7327' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7247' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7263' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7183' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7199' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7119' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7135' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7055' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7071' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7727' (FDC) to 'i_7743'
+INFO: [Synth 8-3886] merging instance 'i_7743' (FDC) to 'i_7679'
+INFO: [Synth 8-3886] merging instance 'i_7663' (FDC) to 'i_7679'
+INFO: [Synth 8-3886] merging instance 'i_7679' (FDC) to 'i_7615'
+INFO: [Synth 8-3886] merging instance 'i_7599' (FDC) to 'i_7615'
+INFO: [Synth 8-3886] merging instance 'i_7615' (FDC) to 'i_7551'
+INFO: [Synth 8-3886] merging instance 'i_6959' (FDC) to 'i_7551'
+INFO: [Synth 8-3886] merging instance 'i_6975' (FDC) to 'i_7551'
+INFO: [Synth 8-3886] merging instance 'i_7535' (FDC) to 'i_7551'
+INFO: [Synth 8-3886] merging instance 'i_7551' (FDC) to 'i_7487'
+INFO: [Synth 8-3886] merging instance 'i_7471' (FDC) to 'i_7487'
+INFO: [Synth 8-3886] merging instance 'i_7487' (FDC) to 'i_7423'
+INFO: [Synth 8-3886] merging instance 'i_7407' (FDC) to 'i_7423'
+INFO: [Synth 8-3886] merging instance 'i_7423' (FDC) to 'i_7359'
+INFO: [Synth 8-3886] merging instance 'i_7343' (FDC) to 'i_7359'
+INFO: [Synth 8-3886] merging instance 'i_7359' (FDC) to 'i_7295'
+INFO: [Synth 8-3886] merging instance 'i_7279' (FDC) to 'i_7295'
+INFO: [Synth 8-3886] merging instance 'i_7295' (FDC) to 'i_7231'
+INFO: [Synth 8-3886] merging instance 'i_7215' (FDC) to 'i_7231'
+INFO: [Synth 8-3886] merging instance 'i_7231' (FDC) to 'i_7167'
+INFO: [Synth 8-3886] merging instance 'i_7151' (FDC) to 'i_7167'
+INFO: [Synth 8-3886] merging instance 'i_7167' (FDC) to 'i_7103'
+INFO: [Synth 8-3886] merging instance 'i_7087' (FDC) to 'i_7103'
+INFO: [Synth 8-3886] merging instance 'i_7103' (FDC) to 'i_7039'
+INFO: [Synth 8-3886] merging instance 'i_7023' (FDC) to 'i_7039'
+INFO: [Synth 8-3886] merging instance 'i_7039' (FDC) to 'i_7007'
+INFO: [Synth 8-3886] merging instance 'i_6991' (FDC) to 'i_7007'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 978.109 ; gain = 645.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/clk_p_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/clk_p_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/clk_short_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/clk_short_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/clk_d_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/clk_d_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/clk_dac_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/clk_dac_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/clk_dac_p_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/clk_dac_p_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/clk_dac_d_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/clk_dac_d_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/dd2_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/dd2_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/dd3_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/dd3_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/dd1_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/dd1_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/dd0_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/dd0_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/sample_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/sample_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/sample_tr_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/sample_tr_1_reg_inv.
+INFO: [Synth 8-5365] Flop inst/clock_gen_v2_S00_AXI_inst/sample_c_1_reg is being inverted and renamed to inst/clock_gen_v2_S00_AXI_inst/sample_c_1_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 978.109 ; gain = 645.477
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 978.109 ; gain = 645.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 978.109 ; gain = 645.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 978.109 ; gain = 645.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 978.109 ; gain = 645.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 978.109 ; gain = 645.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   384|
+|2     |DSP48E1 |    87|
+|3     |LUT1    |   146|
+|4     |LUT2    |   810|
+|5     |LUT3    |   391|
+|6     |LUT4    |   995|
+|7     |LUT6    |   654|
+|8     |MUXF7   |   192|
+|9     |MUXF8   |    96|
+|10    |FDCE    |   884|
+|11    |FDPE    |    11|
+|12    |FDRE    |  1916|
+|13    |FDSE    |     1|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     |  6567|
+|2     |  inst                        |clock_gen_v2         |  6562|
+|3     |    clock_gen_v2_S00_AXI_inst |clock_gen_v2_S00_AXI |  6544|
++------+------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 978.109 ; gain = 645.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3808 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 978.109 ; gain = 260.637
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 978.109 ; gain = 645.477
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 759 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_clock_gen_0_0' is not ideal for floorplanning, since the cellview 'clock_gen_v2_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+180 Infos, 176 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 978.109 ; gain = 656.949
+INFO: [Common 17-1381] The checkpoint 'D:/AlienWare/Course/ECE532/MileStone5/MileStone5/MBS_V1/MicroBlazeServer.runs/design_1_clock_gen_0_0_synth_1/design_1_clock_gen_0_0.dcp' has been generated.
